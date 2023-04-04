@@ -8,8 +8,8 @@ const CheckOrder = () => {
     companyId: "",
   });
   const handleCreate = () => {
-    const url = "http://26.80.64.176:3001/getOrder";
-    axios.get(url, forms).then((res) => {
+    const url = `http://26.80.64.176:3002/getOrder/${forms.companyId}/${forms.orderNumber}`;
+    axios.get(url).then((res) => {
       alert(res.data);
     });
   };

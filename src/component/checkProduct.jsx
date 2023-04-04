@@ -8,8 +8,8 @@ const CheckProductComponent = () => {
     quantityProduct: 0,
   });
   const handleCreate = () => {
-    const url = "http://26.80.64.176:3000/getProduct";
-    axios.get(url, forms).then((res) => {
+    const url = `http://26.80.64.176:3001/getProduct/${forms.nameProduct}/${forms.quantityProduct}`;
+    axios.get(url).then((res) => {
       //   console.log(res);
       alert(res.data);
     });

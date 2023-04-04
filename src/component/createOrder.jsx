@@ -9,7 +9,7 @@ const CreateOrder = () => {
     orderStatus: "",
   });
   const handleCreate = () => {
-    const url = "http://26.80.64.176:3001/createOrder";
+    const url = "http://26.80.64.176:3002/createOrder";
     axios.post(url, forms).then((res) => {
       alert("Thêm mới thành công!");
     });

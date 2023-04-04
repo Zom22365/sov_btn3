@@ -7,7 +7,7 @@ const TableCardComponent = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
     axios
-      .get("http://26.80.64.176:3000/getAllProduct")
+      .get("http://26.80.64.176:3001/getAllProduct")
       .then((res) => setData(res.data));
   });
   return (

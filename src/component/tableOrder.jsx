@@ -5,7 +5,7 @@ const ViewAllOrder = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
     axios
-      .get("http://26.80.64.176:3001/getAllOrder")
+      .get("http://26.80.64.176:3002/getAllOrder")
       .then((res) => setData(res.data));
   }, []);
   return (

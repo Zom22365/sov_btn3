@@ -10,7 +10,7 @@ const CreateCard = () => {
     date: "",
   });
   const handleCreate = () => {
-    const url = "http://26.80.64.176:3002/createCard";
+    const url = "http://26.80.64.176:3003/createCard";
     axios.post(url, forms).then((res) => {
       alert("Thêm mới thành công!");
     });

@@ -8,7 +8,7 @@ const FomrCardComponent = () => {
     quantityProduct: 0,
   });
   const handleCreate = () => {
-    const url = "http://26.80.64.176:3000/createProduct";
+    const url = "http://26.80.64.176:3001/createProduct";
     axios.post(url, forms).then((res) => {
       alert("Thêm mới thành công!");
     });

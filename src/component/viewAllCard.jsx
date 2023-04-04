@@ -5,7 +5,7 @@ const ViewAllCard = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
     axios
-      .get("http://26.80.64.176:3002/getAllCard")
+      .get("http://26.80.64.176:3003/getAllCard")
       .then((res) => setData(res.data));
   }, []);
   return (

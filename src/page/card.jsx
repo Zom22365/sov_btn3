@@ -23,8 +23,9 @@ const Card = () => {
       <div
         style={{
           display: "flex",
-          justifyContent: "space-around",
+          justifyContent: "center",
           margin: "40px auto 60px",
+          gap: "40px",
         }}
       >
         <button
